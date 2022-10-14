@@ -10,7 +10,7 @@
   --font-lg: 18px;
 
 	--border-radius: 8px;
-	--padding-link: 5px;
+	--padding-link: 4px;
 }
 
 * {
@@ -39,8 +39,8 @@ a {
 /*LOGIN*/
 .login {
 	width: 300px;
-	height: 80vh;
-	margin: 60px auto;
+	height: 90vh;
+	margin: 20px auto;
 	padding: 10px;
 }
 
@@ -87,4 +87,28 @@ a {
 	margin: 20px auto;
 	color: var(--hospital-green);
 	font-size: var(--font-sm);
+}
+
+/*MEDIA QUERIES*/
+@media (hover: hover) {
+	.login--btn:hover {
+		cursor: pointer;
+		opacity: 0.8;
+	}
+
+	.login__forgot:hover {
+		cursor: pointer;
+		border-color: var(--hospital-green);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	
+}
+
+@media screen and (min-width: 1024px) {
+	.login {
+		height: 80vh;
+		margin: 60px auto;
+	}
 }
