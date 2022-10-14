@@ -1,0 +1,90 @@
+:root {
+	--white: #FFFFFF;
+  --black: #000000;
+  --light-gray: #C7C7C7;
+  --very-light-gray: #F7F7F7;
+  --hospital-green: #ACD9B2;
+
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 18px;
+
+	--border-radius: 8px;
+	--padding-link: 5px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*GENERALS*/
+a {
+	padding-bottom: var(--padding-link);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+/*LOGIN*/
+.login {
+	width: 300px;
+	height: 80vh;
+	margin: 60px auto;
+	padding: 10px;
+}
+
+.login__form {
+	width: 100%;
+	margin: 20px 0;
+}
+
+.login__form--label {
+	font-weight: bold;
+	font-size: var(--font-sm);
+}
+
+.login__form--input {
+	height: 40px;
+	margin: 5px 0 20px;
+	padding: 10px;
+	font-size: var(--font-md);
+	border: transparent;
+	border-radius: var(--border-radius);
+	background-color: var(--very-light-gray);
+}
+
+.login--btn {
+	height: 40px;
+	font-weight: bold;
+	font-size: var(--font-md);
+	border-radius: var(--border-radius);
+	border: 1px solid var(--hospital-green);
+}
+
+.login__form--btn {
+	margin-top: 20px;
+	color: var(--white);
+	background-color: var(--hospital-green);
+}
+
+.login--registerBtn {
+	color: var(--hospital-green);
+	background-color: var(--white);
+}
+
+.login__forgot {
+	margin: 20px auto;
+	color: var(--hospital-green);
+	font-size: var(--font-sm);
+}
