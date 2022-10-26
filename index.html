@@ -8,15 +8,15 @@
 </head>
 <body>
 	
-	<section class="login flex-column">
+	<section class="login flex-column" id="loginSection">
 		<img src="" alt="Login logo" width="100" height="100">
 
-		<form action="" class="login__form flex-column">
+		<form action="./src/pages/home.html" class="login__form flex-column">
 			<label for="email" class="login__form--label">Correo</label>
-			<input type="text" id="email" name="email" class="login__form--input">
+			<input type="text" id="email" name="email" placeholder="usuario@example.com" class="login__form--input">
 
 			<label for="password" class="login__form--label">Contraseña</label>
-			<input type="password" id="password" name="password" class="login__form--input">
+			<input type="password" id="password" name="password" placeholder="********" class="login__form--input">
 
 			<input type="submit" class="login__form--btn login--btn" value="Iniciar Sesión">
 		</form>
@@ -25,5 +25,7 @@
 
 		<button class="login--registerBtn login--btn">Registrarse</button>
 	</section>
+
+	<section class="" id="registerSection"></section>
 </body>
 </html>
