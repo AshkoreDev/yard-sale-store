@@ -21,9 +21,7 @@
 
 /*GENERALS*/
 a {
-	padding-bottom: var(--padding-link);
 	text-decoration: none;
-	border-bottom: 1px solid transparent;
 }
 
 li {
@@ -123,7 +121,10 @@ nav {
 }
 
 .navbar__menuCenter li a {
+	padding: 5px;
 	color: var(--light-gray);
+	border: 1px solid transparent;
+	border-radius: var(--border-radius);
 }
 
 .navbar__menuRight img {
@@ -147,10 +148,17 @@ nav {
 		cursor: pointer;
 		border-color: var(--hospital-green);
 	}
+
+	.navbar__menuCenter li a:hover {
+		border-color: var(--hospital-green);
+    color: var(--hospital-green);
+	}
 }
 
 @media screen and (min-width: 768px) {
-	
+	.navbar__menuLogo {
+		display: none;
+	}
 }
 
 @media screen and (min-width: 1024px) {
