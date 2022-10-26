@@ -122,6 +122,10 @@ nav {
 	gap: 20px;
 }
 
+.navbar__menuCenter li a {
+	color: var(--light-gray);
+}
+
 .navbar__menuRight img {
 	width: 30px;
 	height: 30px;
