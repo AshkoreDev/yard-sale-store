@@ -107,24 +107,8 @@ nav {
 	height: 30px;
 }
 
-.navbar__menuLogo img {
-	width: 30px;
-	height: 30px;
-}
-
 .navbar__menuCenter {
-	gap: 80px;
-}
-
-.navbar__menuCenter ul {
-	gap: 20px;
-}
-
-.navbar__menuCenter li a {
-	padding: 5px;
-	color: var(--light-gray);
-	border: 1px solid transparent;
-	border-radius: var(--border-radius);
+	display: none;
 }
 
 .navbar__menuRight img {
@@ -158,6 +142,22 @@ nav {
 @media screen and (min-width: 768px) {
 	.navbar__menuLogo {
 		display: none;
+	}
+
+	.navbar__menuCenter {
+		display: flex;
+		gap: 40px;
+	}
+
+	.navbar__menuCenter ul {
+		gap: 20px;
+	}
+
+	.navbar__menuCenter li a {
+		padding: 5px;
+		color: var(--light-gray);
+		border: 1px solid transparent;
+		border-radius: var(--border-radius);
 	}
 }
 
