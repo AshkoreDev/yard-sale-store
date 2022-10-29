@@ -13,6 +13,7 @@ const shoppingCart = document.getElementById('shoppingCart');
 userBtn.addEventListener('click', () => {
 
 	userMenu.classList.toggle('inactive');
+	shoppingCart.classList.add('inactive');
 });
 
 mobileMenuBtn.addEventListener('click', () => {
@@ -25,4 +26,5 @@ shoppingCartBtn.addEventListener('click', () => {
 
 	shoppingCart.classList.toggle('inactive');
 	mobileMenu.classList.add('inactive');
+	userMenu.classList.add('inactive');
 });
