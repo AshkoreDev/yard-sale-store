@@ -1,12 +1,18 @@
 const userBtn = document.getElementById('userBtn');
 const userMenu = document.getElementById('userMenu');
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
 
 /*FUNCTIONS*/
-function toggleUserMenu() {
-	
+
+
+
+userBtn.addEventListener('click', () => {
+
 	userMenu.classList.toggle('inactive');
-}
+});
 
+mobileMenuBtn.addEventListener('click', () => {
 
-
-userBtn.addEventListener('click', toggleUserMenu);
+	mobileMenu.classList.toggle('inactive');
+});

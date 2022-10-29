@@ -12,7 +12,7 @@
 <body>
 	
 	<nav class="flex">
-		<figure class="navbar__menuLogo">
+		<figure id="mobileMenuBtn" class="navbar__mobile">
 			<img src="https://img.icons8.com/ios-filled/344/menu.png" alt="Menu logo" width="30" height="30">
 		</figure>
 
@@ -30,18 +30,40 @@
 		</div>
 
 		<div class="navbar__menuRight flex">
-			<img src="https://img.icons8.com/ios/344/guest-male.png" alt="User logo" id="userBtn" class="navbar__menuRight--user" width="20" height="20">
-			<img src="https://img.icons8.com/glyph-neue/344/shopping-cart.png" alt="ShoppingCart logo" class="navbar__menuRight--shoppingCart" width="20" height="20">
+			<img src="https://img.icons8.com/ios/344/guest-male.png" alt="User logo" id="userBtn" class="navbar__menuRight--user" width="25" height="25">
+
+			<img src="https://img.icons8.com/glyph-neue/344/shopping-cart.png" alt="ShoppingCart logo" class="navbar__menuRight--shoppingCart" width="25" height="25">
 		</div>
 
 		<div id="userMenu" class="navbar__menuRight--menu inactive">
 	    <ul>
-	      <li><a href="/" class="title">My orders</a></li>
-	      <li><a href="/">My account</a></li>
-	      <li><a href="/">Sign out</a></li>
+	      <li><a href="/" class="title">Mis ordenes</a></li>
+	      <li><a href="/">Mi cuenta</a></li>
+	      <li><a href="/">Cerrar sesión</a></li>
 	    </ul>
   	</div>
 
+  	<div id="mobileMenu" class="navbar__mobileMenu inactive">
+	    <ul>
+	      <li><a href="/">CATEGORIAS</a></li>
+	      <li><a href="">Todo</a></li>
+				<li><a href="">Ropa</a></li>
+				<li><a href="">Electronicos</a></li>
+				<li><a href="">Muebles</a></li>
+				<li><a href="">Juguetes</a></li>
+				<li><a href="">Otros</a></li>
+	    </ul>
+
+	    <ul>
+	      <li><a href="/">Mis ordenes</a></li>
+	      <li><a href="/">Mi cuenta</a></li>
+	    </ul>
+
+	    <ul>
+	      <li><a href="/" class="navbar__mobileMenu--email">platzi@example.com</a></li>
+	      <li><a href="/" class="navbar__mobileMenu--signOut">Cerrar sesión</a></li>
+	    </ul>
+  	</div>
 	</nav>
 
 	<script src="./../js/main.js"></script>
