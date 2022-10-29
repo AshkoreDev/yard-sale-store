@@ -18,9 +18,11 @@ userBtn.addEventListener('click', () => {
 mobileMenuBtn.addEventListener('click', () => {
 
 	mobileMenu.classList.toggle('inactive');
+	shoppingCart.classList.add('inactive');
 });
 
 shoppingCartBtn.addEventListener('click', () => {
 
 	shoppingCart.classList.toggle('inactive');
+	mobileMenu.classList.add('inactive');
 });
