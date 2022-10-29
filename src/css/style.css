@@ -128,8 +128,8 @@ nav {
 }
 
 .navbar__menuRight img {
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 }
 
 .navbar__menuRight {
@@ -177,6 +177,97 @@ nav {
 }
 
 
+/*SHOPPING CART*/
+.product__detail {
+  width: 100%;
+  margin-top: 80px;
+  padding: 0 24px;
+  position: absolute;
+  /*right: calc(100% - 100px);*/
+  right: 0;
+}
+
+.title__container {
+  display: flex;
+}
+
+.title__container img {
+	width: 25px;
+	height: 25px;
+  margin-right: 14px;
+}
+
+.title {
+  font-size: var(--font-lg);
+  font-weight: bold;
+}
+
+.myOrder__content {
+	margin-top: 20px;
+}
+
+.product__detail--order {
+	margin-bottom: 24px;
+	padding: 0 24px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  border-radius: var(--border-radius);
+  background-color: var(--text-input-field); 
+}
+
+.product__detail--order p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__detail--order p span:nth-child(1) {
+  font-size: var(--md);
+  font-weight: bold;
+}
+
+.product__detail--order p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}
+
+.shopping__cart {
+	margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.shopping__cart figure img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.shopping__cart p:nth-child(2) {
+  color: var(--very-light-gray);
+}
+
+.shopping__cart p:nth-child(3) {
+  font-size: var(--font-md);
+  font-weight: bold;
+}
+
+.primary-button {
+	width: 100%;
+	height: 50px;
+	color: var(--white);
+  font-size: var(--font-md);
+  font-weight: bold;
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-color: var(--hospital-green);
+}
+
+
 /*MEDIA QUERIES*/
 @media (hover: hover) {
 	.login--btn:hover {
@@ -195,6 +286,9 @@ nav {
 	}
 
 	.navbar__menuRight img:hover {
+		cursor: pointer;
+	}
+	.primary-button:hover {
 		cursor: pointer;
 	}
 }
@@ -265,6 +359,10 @@ nav {
 
 	.navbar__menuRight--user {
 		display: initial;
+	}
+
+	.product__detail {
+		width: 360px;
 	}
 }
 
