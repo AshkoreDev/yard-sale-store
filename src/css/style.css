@@ -314,7 +314,7 @@ nav {
 }
 
 /*PRODUCTS LIST*/
-.cards-container {
+.cards__container {
 	margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 240px);

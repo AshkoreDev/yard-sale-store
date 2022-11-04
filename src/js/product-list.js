@@ -26,47 +26,49 @@ productList.push([
 	}
 ]);
 
-for(product of productList) {
+
+function createProductCard(productList) {
+
+	productList.forEach(product => {
 
 	const productCard = document.createElement('div');
-	productCard.clasList.add('product__card');
+	productCard.classList.add('product__card');
 
 	const productCardImg = document.createElement('img');
 	productCardImg.setAttribute('src', product.image);
-	productCardImg.setAttribute('alt', `#{product.name} foto`);
+	productCardImg.setAttribute('alt', product.name + ' foto');
 
 	const productInfo = document.createElement('div');
-	productInfo.clasList.add('product__info');
+	productInfo.classList.add('product__info');
 
 	const productInfoDiv = document.createElement('div');
 
 	const productInfoPrice = document.createElement('p');
-	productInfoPrice.innerText = `$#{product.price}`;
+	productInfoPrice.innerText = '$' + product.price;
 
 	const productInfoName = document.createElement('p');
-	productInfoName.innerText = `$#{product.name}`;
+	productInfoName.innerText = product.name;
 
 	const productFigure = document.createElement('figure');
 
 	const productFigureImg = document.createElement('img');
 	productFigureImg.setAttribute('src', './../images/bt_add_to_cart.svg');
-	productFigureImg.setAttribute('alt', `#{product.name} foto`);
+	productFigureImg.setAttribute('alt', 'Carrito de compras logo');
 
 	productFigure.appendChild(productFigureImg);
-	productInfoDiv.appendChild(productInfoPrice);
-	productInfoDiv.appendChild(productInfoName);
+	productInfoDiv.appendChild(productInfoPrice, productInfoName);
 	productInfo.appendChild(productInfoDiv);
+	productCard.appendChild(productCardImg, productInfo, productFigure);
 
-	productCard.appendChild(productCardImg);
-	productCard.appendChild(productInfo);
-	productCard.appendChild(productFigure);
+	productCardFragment.appendChild(productCard);
 
-	productCard.append(productCard);
-
-}
+});
 
 productListContainer.append(productCardFragment);
 
+}
+
+createProductCard(productList);
 console.log(productList);
 
 // <div class="product-card">
