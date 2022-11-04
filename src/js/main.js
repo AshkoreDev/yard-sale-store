@@ -1,3 +1,5 @@
+import './product-list.js';
+
 const userBtn = document.getElementById('userBtn');
 const userMenu = document.getElementById('userMenu');
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
