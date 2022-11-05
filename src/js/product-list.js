@@ -1,7 +1,7 @@
 
 const productList = [];
-const productListContainer = document.getElementById('productListContainer');
 const productCardFragment = document.createDocumentFragment();
+const productListContainer = document.getElementById('productListContainer');
 
 productList.push({
 	name: 'Bicicleta',
@@ -34,41 +34,43 @@ productList.push({
 });
 
 
-productList.forEach(product => {
+function renderProducts(arr) {
+	productList.forEach(product => {
 
-	const productCard = document.createElement('div');
-	productCard.classList.add('product__card');
+		const productCard = document.createElement('div');
+		productCard.classList.add('product__card');
 
-	const productCardImg = document.createElement('img');
-	productCardImg.setAttribute('src', product.image);
-	productCardImg.setAttribute('alt', product.name + ' foto');
+		const productCardImg = document.createElement('img');
+		productCardImg.setAttribute('src', product.image);
+		productCardImg.setAttribute('alt', product.name + ' foto');
 
-	const productInfo = document.createElement('div');
-	productInfo.classList.add('product__info');
+		const productInfo = document.createElement('div');
+		productInfo.classList.add('product__info');
 
-	const productInfoDiv = document.createElement('div');
+		const productInfoDiv = document.createElement('div');
 
-	const productInfoPrice = document.createElement('p');
-	productInfoPrice.innerText = '$' + product.price;
+		const productInfoPrice = document.createElement('p');
+		productInfoPrice.innerText = '$' + product.price;
 
-	const productInfoName = document.createElement('p');
-	productInfoName.innerText = product.name;
+		const productInfoName = document.createElement('p');
+		productInfoName.innerText = product.name;
 
-	const productFigure = document.createElement('figure');
+		const productFigure = document.createElement('figure');
 
-	const productFigureImg = document.createElement('img');
-	productFigureImg.setAttribute('src', './../images/bt_add_to_cart.svg');
-	productFigureImg.setAttribute('alt', 'Carrito de compras logo');
+		const productFigureImg = document.createElement('img');
+		productFigureImg.setAttribute('src', './../images/bt_add_to_cart.svg');
+		productFigureImg.setAttribute('alt', 'Carrito de compras logo');
 
-	productFigure.append(productFigureImg);
-	productInfoDiv.append(productInfoPrice, productInfoName);
-	productInfo.append(productInfoDiv, productFigure);
-	productCard.append(productCardImg, productInfo);
+		productFigure.append(productFigureImg);
+		productInfoDiv.append(productInfoPrice, productInfoName);
+		productInfo.append(productInfoDiv, productFigure);
+		productCard.append(productCardImg, productInfo);
 
-	productCardFragment.append(productCard);
+		productCardFragment.append(productCard);
 
-})
+	});
 
-productListContainer.appendChild(productCardFragment);
+	productListContainer.appendChild(productCardFragment);
+}
 
-// console.log(productList);
+renderProducts(productList);
