@@ -227,10 +227,12 @@ nav {
 /*SHOPPING CART*/
 .shoppingCart {
   width: 100%;
-  margin-top: 80px;
-  padding: 0 24px;
+  /*margin-top: 10px;*/
+  padding: 10px 24px;
   position: absolute;
   right: 0;
+  background-color: white;
+  border-radius: var(--border-radius-card);
 }
 
 .shoppingCart--title {
@@ -324,7 +326,7 @@ nav {
 .product__card {
   width: 240px;
 }
-.product__card img {
+.product__card > img {
   width: 240px;
   height: 240px;
   border-radius: 20px;
@@ -336,20 +338,17 @@ nav {
   align-items: center;
   margin-top: 12px;
 }
-.product__info figure {
-  margin: 0;
-}
 .product__info figure img {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
-.product__info div p:nth-child(1) {
+.product__info p:nth-child(1) {
   font-weight: bold;
   font-size: var(--md);
   margin-top: 0;
   margin-bottom: 4px;
 }
-.product__info div p:nth-child(2) {
+.product__info p:nth-child(2) {
   font-size: var(--sm);
   margin-top: 0;
   margin-bottom: 0;
@@ -377,11 +376,11 @@ nav {
 		cursor: pointer;
 	}
 
-	.shoppingCart--title img {
+	.shoppingCart__order--cart img:hover {
 		cursor: pointer;
 	}
 
-	.shoppingCart__order--cart > img {
+	.product__info figure img:hover {
 		cursor: pointer;
 	}
 

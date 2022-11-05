@@ -3,33 +3,32 @@ const productList = [];
 const productListContainer = document.getElementById('productListContainer');
 const productCardFragment = document.createDocumentFragment();
 
-productList.push([
-  {
+productList.push({
 	name: 'Bicicleta',
 	price: 500,
 	image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-	},
-	{
-	name: 'Pantalla',
+});
+
+productList.push({ 
+  name: 'Pantalla',
 	price: 200,
 	image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-	},
-	{
-	name: 'Computador',
-	price: 600,
-	image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-	},
-	{
-	name: 'Cama',
+});
+
+productList.push({ 
+  name: 'Cama',
 	price: 400,
 	image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-	}
-]);
+});
 
+productList.push({ 
+  name: 'Computador',
+	price: 600,
+	image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+});
+	
 
-function createProductCard(productList) {
-
-	productList.forEach(product => {
+productList.forEach(product => {
 
 	const productCard = document.createElement('div');
 	productCard.classList.add('product__card');
@@ -55,33 +54,15 @@ function createProductCard(productList) {
 	productFigureImg.setAttribute('src', './../images/bt_add_to_cart.svg');
 	productFigureImg.setAttribute('alt', 'Carrito de compras logo');
 
-	productFigure.appendChild(productFigureImg);
-	productInfoDiv.appendChild(productInfoPrice, productInfoName);
-	productInfo.appendChild(productInfoDiv);
-	productCard.appendChild(productCardImg, productInfo, productFigure);
+	productFigure.append(productFigureImg);
+	productInfoDiv.append(productInfoPrice, productInfoName);
+	productInfo.append(productInfoDiv, productFigure);
+	productCard.append(productCardImg, productInfo);
 
-	productCardFragment.appendChild(productCard);
+	productCardFragment.append(productCard);
 
-});
+})
 
-productListContainer.append(productCardFragment);
+productListContainer.appendChild(productCardFragment);
 
-}
-
-createProductCard(productList);
-console.log(productList);
-
-// <div class="product-card">
-//         <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-
-//         <div class="product-info">
-//           <div>
-//             <p>$120,00</p>
-//             <p>Bike</p>
-//           </div>
-
-//           <figure>
-//             <img src="./icons/bt_add_to_cart.svg" alt="">
-//           </figure>
-//         </div>
-//       </div>
+// console.log(productList);
