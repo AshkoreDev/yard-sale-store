@@ -114,6 +114,7 @@ nav {
 	position: fixed;
 	top: 0;
 	justify-content: space-between;
+	background-color: white;
 	border-bottom: 1px solid var(--light-gray);
 }
 
@@ -191,8 +192,9 @@ nav {
 .navbar__mobileMenu {
 	padding: 24px;
 	position: absolute;
-	top: calc(100% - 0px);
+	bottom: calc(100% - 650px);
 	right: calc(100% - 200px);
+	background-color: white;
 }
 
 .navbar__mobileMenu a {
