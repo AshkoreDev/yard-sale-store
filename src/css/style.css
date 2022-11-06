@@ -354,16 +354,6 @@ aside {
   color: var(--light-gray);
   font-size: var(--font-sm); 
 }
-.primary-button {
-	width: 100%;
-  height: 50px;
-  border: none;
-  border-radius: 8px;
-  color: var(--white);
-  font-size: var(--font-md);
-  font-weight: bold;
-  background-color: var(--hospital-green);
-}
 .addToCart-button {
   display: flex;
   align-items: center;
