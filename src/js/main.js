@@ -1,2 +1,2 @@
-import './buttons.js';
 import './product-list.js';
+import './buttons.js';

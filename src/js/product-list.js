@@ -43,6 +43,7 @@ function renderProducts(arr) {
 		const productCardImg = document.createElement('img');
 		productCardImg.setAttribute('src', product.image);
 		productCardImg.setAttribute('alt', product.name + ' foto');
+		productCardImg.setAttribute('id', 'productDetailBtn');
 
 		const productInfo = document.createElement('div');
 		productInfo.classList.add('product__info');
