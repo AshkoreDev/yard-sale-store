@@ -4,9 +4,8 @@ const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 const shoppingCartBtn = document.getElementById('shoppingCartBtn');
 const shoppingCart = document.getElementById('shoppingCart');
-const productDetailBtn = document.getElementById('productDetailBtn');
-const productDetail = document.getElementById('productDetail');
 const productDetailCloseBtn = document.getElementById('productDetailCloseBtn');
+
 
 userBtn.addEventListener('click', () => {
 
@@ -30,15 +29,8 @@ shoppingCartBtn.addEventListener('click', () => {
 	productDetail.classList.add('inactive');
 });
 
-productDetailBtn.addEventListener('click', () => {
-
-	shoppingCart.classList.add('inactive');
-	mobileMenu.classList.add('inactive');
-	userMenu.classList.add('inactive');
-	productDetail.classList.remove('inactive');
-});
-
 productDetailCloseBtn.addEventListener('click', () => {
 
 	productDetail.classList.add('inactive');
 });
+

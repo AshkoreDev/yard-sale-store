@@ -3,6 +3,8 @@ const productList = [];
 const productCardFragment = document.createDocumentFragment();
 const productListContainer = document.getElementById('productListContainer');
 
+const productDetail = document.getElementById('productDetail');
+
 productList.push({
 	name: 'Bicicleta',
 	price: 500,
@@ -34,6 +36,16 @@ productList.push({
 });
 
 
+function openProductDetail() {
+	shoppingCart.classList.add('inactive');
+	mobileMenu.classList.add('inactive');
+	userMenu.classList.add('inactive');
+	productDetail.classList.remove('inactive');
+}
+
+
+
+
 function renderProducts(arr) {
 	productList.forEach(product => {
 
@@ -43,7 +55,7 @@ function renderProducts(arr) {
 		const productCardImg = document.createElement('img');
 		productCardImg.setAttribute('src', product.image);
 		productCardImg.setAttribute('alt', product.name + ' foto');
-		productCardImg.setAttribute('id', 'productDetailBtn');
+		productCardImg.addEventListener('click', openProductDetail);
 
 		const productInfo = document.createElement('div');
 		productInfo.classList.add('product__info');
