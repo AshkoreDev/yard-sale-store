@@ -43,9 +43,6 @@ function openProductDetail() {
 	productDetail.classList.remove('inactive');
 }
 
-
-
-
 function renderProducts(arr) {
 	productList.forEach(product => {
 

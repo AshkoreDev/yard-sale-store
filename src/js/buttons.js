@@ -33,4 +33,3 @@ productDetailCloseBtn.addEventListener('click', () => {
 
 	productDetail.classList.add('inactive');
 });
-
