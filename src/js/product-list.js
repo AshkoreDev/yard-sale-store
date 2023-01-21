@@ -70,6 +70,8 @@ function renderProducts(arr) {
 		const productFigureImg = document.createElement('img');
 		productFigureImg.setAttribute('src', './../images/bt_add_to_cart.svg');
 		productFigureImg.setAttribute('alt', 'Carrito de compras logo');
+		productFigureImg.setAttribute('width', '240');
+		productFigureImg.setAttribute('height', '240');
 
 		productFigure.append(productFigureImg);
 		productInfoDiv.append(productInfoPrice, productInfoName);
