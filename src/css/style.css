@@ -27,7 +27,7 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
-/*GENERALS*/
+/* GLOBAL */
 a {
 	text-decoration: none;
 }
@@ -63,8 +63,8 @@ li {
 	margin: 30px 0;
 }
 .login__form--label {
-	font-weight: bold;
 	font-size: var(--font-sm);
+	font-weight: bold;
 }
 .login__form--input {
 	height: 40px;
